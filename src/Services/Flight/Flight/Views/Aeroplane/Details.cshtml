@@ -1,0 +1,13 @@
+﻿@model Flight.Models.Aeroplane
+
+<h1>Aeroplane Details</h1>
+
+<div>
+    <h4>Name: @Model.Name</h4>
+    <h4>Manufacturer: @Model.Manufacturer</h4>
+    <h4>Is Active: @(Model.IsActive ? "Yes" : "No")</h4>
+</div>
+
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>

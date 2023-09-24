@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Flight.DTOs\Flight.DTOs.csproj" />
+    <ProjectReference Include="..\Flight.Infrastructure\Flight.Infrastructure.csproj" />
+    <ProjectReference Include="..\Flight.Models\Flight.Models.csproj" />
+  </ItemGroup>
+
+</Project>
