@@ -9,15 +9,29 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Flight", "Flight", "{F73DF0
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flight", "Services\Flight\Flight\Flight.csproj", "{17B21A07-9ECE-4A4B-93FA-23E880CB0D42}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flight.Models", "Services\Flight\Flight.Models\Flight.Models.csproj", "{B1CF60E9-4828-452F-83CE-79D55BC0FAC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flight.Models", "Services\Flight\Flight.Models\Flight.Models.csproj", "{B1CF60E9-4828-452F-83CE-79D55BC0FAC9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flight.Business", "Services\Flight\Flight.Business\Flight.Business.csproj", "{13A5FC9C-80D0-4782-B027-D24610B4F88D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flight.Business", "Services\Flight\Flight.Business\Flight.Business.csproj", "{13A5FC9C-80D0-4782-B027-D24610B4F88D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flight.Repository", "Services\Flight\Flight.Repository\Flight.Repository.csproj", "{C1F18609-AB93-4D41-9E56-80B486934FEE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flight.Repository", "Services\Flight\Flight.Repository\Flight.Repository.csproj", "{C1F18609-AB93-4D41-9E56-80B486934FEE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flight.DTOs", "Services\Flight\Flight.DTOs\Flight.DTOs.csproj", "{941C8676-1BDC-42DA-A3B3-558F534EB8AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flight.DTOs", "Services\Flight\Flight.DTOs\Flight.DTOs.csproj", "{941C8676-1BDC-42DA-A3B3-558F534EB8AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Flight.Infrastructure", "Services\Flight\Flight.Infrastructure\Flight.Infrastructure.csproj", "{C0898345-6C59-4022-8F52-C4AAF1259EF1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flight.Infrastructure", "Services\Flight\Flight.Infrastructure\Flight.Infrastructure.csproj", "{C0898345-6C59-4022-8F52-C4AAF1259EF1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FlightFolio", "FlightFolio", "{3499EE78-C9EA-4877-859F-70FF0C75784F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightFolio", "Services\FlightFolio\FlightFolio\FlightFolio.csproj", "{EDE40702-8EEF-46B5-8735-8C34D1CACC94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightFolio.Business", "Services\FlightFolio\FlightFolio.Business\FlightFolio.Business.csproj", "{3F9133A2-10E1-4EFE-BFF4-A8EDA1D64CEC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightFolio.DTOs", "Services\FlightFolio\FlightFolio.DTOs\FlightFolio.DTOs.csproj", "{C2D59E6A-69CC-4E16-BF27-41AB4818C455}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightFolio.Infrastructure", "Services\FlightFolio\FlightFolio.Infrastructure\FlightFolio.Infrastructure.csproj", "{5CB4E689-D9FC-4E4A-AA85-AE2CAC9164CE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightFolio.Repository", "Services\FlightFolio\FlightFolio.Repository\FlightFolio.Repository.csproj", "{6B8C0291-EDEF-4151-A4FE-10454EFE25FF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightFolio.Models", "Services\FlightFolio\FlightFolio.Models\FlightFolio.Models.csproj", "{9A599650-8B75-4CD4-AAAC-630E25A870F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,6 +63,30 @@ Global
 		{C0898345-6C59-4022-8F52-C4AAF1259EF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0898345-6C59-4022-8F52-C4AAF1259EF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0898345-6C59-4022-8F52-C4AAF1259EF1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EDE40702-8EEF-46B5-8735-8C34D1CACC94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EDE40702-8EEF-46B5-8735-8C34D1CACC94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EDE40702-8EEF-46B5-8735-8C34D1CACC94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EDE40702-8EEF-46B5-8735-8C34D1CACC94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F9133A2-10E1-4EFE-BFF4-A8EDA1D64CEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F9133A2-10E1-4EFE-BFF4-A8EDA1D64CEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F9133A2-10E1-4EFE-BFF4-A8EDA1D64CEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F9133A2-10E1-4EFE-BFF4-A8EDA1D64CEC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2D59E6A-69CC-4E16-BF27-41AB4818C455}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2D59E6A-69CC-4E16-BF27-41AB4818C455}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2D59E6A-69CC-4E16-BF27-41AB4818C455}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2D59E6A-69CC-4E16-BF27-41AB4818C455}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5CB4E689-D9FC-4E4A-AA85-AE2CAC9164CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5CB4E689-D9FC-4E4A-AA85-AE2CAC9164CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5CB4E689-D9FC-4E4A-AA85-AE2CAC9164CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5CB4E689-D9FC-4E4A-AA85-AE2CAC9164CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B8C0291-EDEF-4151-A4FE-10454EFE25FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B8C0291-EDEF-4151-A4FE-10454EFE25FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B8C0291-EDEF-4151-A4FE-10454EFE25FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B8C0291-EDEF-4151-A4FE-10454EFE25FF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9A599650-8B75-4CD4-AAAC-630E25A870F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9A599650-8B75-4CD4-AAAC-630E25A870F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9A599650-8B75-4CD4-AAAC-630E25A870F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9A599650-8B75-4CD4-AAAC-630E25A870F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -61,6 +99,13 @@ Global
 		{C1F18609-AB93-4D41-9E56-80B486934FEE} = {F73DF00B-62B0-4C62-A490-46459942B016}
 		{941C8676-1BDC-42DA-A3B3-558F534EB8AC} = {F73DF00B-62B0-4C62-A490-46459942B016}
 		{C0898345-6C59-4022-8F52-C4AAF1259EF1} = {F73DF00B-62B0-4C62-A490-46459942B016}
+		{3499EE78-C9EA-4877-859F-70FF0C75784F} = {65F7DD18-1995-40DD-ABAD-FAF8D2C91289}
+		{EDE40702-8EEF-46B5-8735-8C34D1CACC94} = {3499EE78-C9EA-4877-859F-70FF0C75784F}
+		{3F9133A2-10E1-4EFE-BFF4-A8EDA1D64CEC} = {3499EE78-C9EA-4877-859F-70FF0C75784F}
+		{C2D59E6A-69CC-4E16-BF27-41AB4818C455} = {3499EE78-C9EA-4877-859F-70FF0C75784F}
+		{5CB4E689-D9FC-4E4A-AA85-AE2CAC9164CE} = {3499EE78-C9EA-4877-859F-70FF0C75784F}
+		{6B8C0291-EDEF-4151-A4FE-10454EFE25FF} = {3499EE78-C9EA-4877-859F-70FF0C75784F}
+		{9A599650-8B75-4CD4-AAAC-630E25A870F9} = {3499EE78-C9EA-4877-859F-70FF0C75784F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E9F7522F-4DCC-4481-B7B7-488CF1E7E12F}
