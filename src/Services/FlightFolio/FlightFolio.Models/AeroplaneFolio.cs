@@ -20,6 +20,8 @@ namespace FlightFolio.Models
 
         public DateTime? Arrival { get; set; }
 
+        public int? TotalPassenger { get; set; }
+
         public virtual Aeroplane Aeroplane { get; set; }
     }
 }

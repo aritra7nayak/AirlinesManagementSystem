@@ -21,17 +21,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flight.Infrastructure", "Se
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FlightFolio", "FlightFolio", "{3499EE78-C9EA-4877-859F-70FF0C75784F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightFolio", "Services\FlightFolio\FlightFolio\FlightFolio.csproj", "{EDE40702-8EEF-46B5-8735-8C34D1CACC94}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlightFolio.Business", "Services\FlightFolio\FlightFolio.Business\FlightFolio.Business.csproj", "{3F9133A2-10E1-4EFE-BFF4-A8EDA1D64CEC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightFolio.Business", "Services\FlightFolio\FlightFolio.Business\FlightFolio.Business.csproj", "{3F9133A2-10E1-4EFE-BFF4-A8EDA1D64CEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlightFolio.DTOs", "Services\FlightFolio\FlightFolio.DTOs\FlightFolio.DTOs.csproj", "{C2D59E6A-69CC-4E16-BF27-41AB4818C455}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightFolio.DTOs", "Services\FlightFolio\FlightFolio.DTOs\FlightFolio.DTOs.csproj", "{C2D59E6A-69CC-4E16-BF27-41AB4818C455}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlightFolio.Infrastructure", "Services\FlightFolio\FlightFolio.Infrastructure\FlightFolio.Infrastructure.csproj", "{5CB4E689-D9FC-4E4A-AA85-AE2CAC9164CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightFolio.Infrastructure", "Services\FlightFolio\FlightFolio.Infrastructure\FlightFolio.Infrastructure.csproj", "{5CB4E689-D9FC-4E4A-AA85-AE2CAC9164CE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlightFolio.Repository", "Services\FlightFolio\FlightFolio.Repository\FlightFolio.Repository.csproj", "{6B8C0291-EDEF-4151-A4FE-10454EFE25FF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightFolio.Repository", "Services\FlightFolio\FlightFolio.Repository\FlightFolio.Repository.csproj", "{6B8C0291-EDEF-4151-A4FE-10454EFE25FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlightFolio.Models", "Services\FlightFolio\FlightFolio.Models\FlightFolio.Models.csproj", "{9A599650-8B75-4CD4-AAAC-630E25A870F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightFolio.Models", "Services\FlightFolio\FlightFolio.Models\FlightFolio.Models.csproj", "{9A599650-8B75-4CD4-AAAC-630E25A870F9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightFolio", "Services\FlightFolio\FlightFolio\FlightFolio.csproj", "{E6E83A97-C7E2-44EB-A015-190A8D4AB46A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,10 +63,6 @@ Global
 		{C0898345-6C59-4022-8F52-C4AAF1259EF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C0898345-6C59-4022-8F52-C4AAF1259EF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C0898345-6C59-4022-8F52-C4AAF1259EF1}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EDE40702-8EEF-46B5-8735-8C34D1CACC94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EDE40702-8EEF-46B5-8735-8C34D1CACC94}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EDE40702-8EEF-46B5-8735-8C34D1CACC94}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EDE40702-8EEF-46B5-8735-8C34D1CACC94}.Release|Any CPU.Build.0 = Release|Any CPU
 		{3F9133A2-10E1-4EFE-BFF4-A8EDA1D64CEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{3F9133A2-10E1-4EFE-BFF4-A8EDA1D64CEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3F9133A2-10E1-4EFE-BFF4-A8EDA1D64CEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -87,6 +83,10 @@ Global
 		{9A599650-8B75-4CD4-AAAC-630E25A870F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A599650-8B75-4CD4-AAAC-630E25A870F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A599650-8B75-4CD4-AAAC-630E25A870F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6E83A97-C7E2-44EB-A015-190A8D4AB46A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6E83A97-C7E2-44EB-A015-190A8D4AB46A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6E83A97-C7E2-44EB-A015-190A8D4AB46A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6E83A97-C7E2-44EB-A015-190A8D4AB46A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -100,12 +100,12 @@ Global
 		{941C8676-1BDC-42DA-A3B3-558F534EB8AC} = {F73DF00B-62B0-4C62-A490-46459942B016}
 		{C0898345-6C59-4022-8F52-C4AAF1259EF1} = {F73DF00B-62B0-4C62-A490-46459942B016}
 		{3499EE78-C9EA-4877-859F-70FF0C75784F} = {65F7DD18-1995-40DD-ABAD-FAF8D2C91289}
-		{EDE40702-8EEF-46B5-8735-8C34D1CACC94} = {3499EE78-C9EA-4877-859F-70FF0C75784F}
 		{3F9133A2-10E1-4EFE-BFF4-A8EDA1D64CEC} = {3499EE78-C9EA-4877-859F-70FF0C75784F}
 		{C2D59E6A-69CC-4E16-BF27-41AB4818C455} = {3499EE78-C9EA-4877-859F-70FF0C75784F}
 		{5CB4E689-D9FC-4E4A-AA85-AE2CAC9164CE} = {3499EE78-C9EA-4877-859F-70FF0C75784F}
 		{6B8C0291-EDEF-4151-A4FE-10454EFE25FF} = {3499EE78-C9EA-4877-859F-70FF0C75784F}
 		{9A599650-8B75-4CD4-AAAC-630E25A870F9} = {3499EE78-C9EA-4877-859F-70FF0C75784F}
+		{E6E83A97-C7E2-44EB-A015-190A8D4AB46A} = {3499EE78-C9EA-4877-859F-70FF0C75784F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E9F7522F-4DCC-4481-B7B7-488CF1E7E12F}
