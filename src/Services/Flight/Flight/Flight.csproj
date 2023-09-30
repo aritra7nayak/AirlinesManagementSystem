@@ -14,6 +14,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="PagedList.Mvc" Version="4.5.0" />
+    <PackageReference Include="RabbitMQ.Client" Version="6.5.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
   </ItemGroup>
 
@@ -21,6 +22,7 @@
     <ProjectReference Include="..\Flight.Business\Flight.Business.csproj" />
     <ProjectReference Include="..\Flight.DTOs\Flight.DTOs.csproj" />
     <ProjectReference Include="..\Flight.Infrastructure\Flight.Infrastructure.csproj" />
+    <ProjectReference Include="..\Flight.MessageService\Flight.MessageService.csproj" />
     <ProjectReference Include="..\Flight.Models\Flight.Models.csproj" />
     <ProjectReference Include="..\Flight.Repository\Flight.Repository.csproj" />
   </ItemGroup>

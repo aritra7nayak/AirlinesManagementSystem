@@ -31,7 +31,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlightFolio.Repository", "S
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlightFolio.Models", "Services\FlightFolio\FlightFolio.Models\FlightFolio.Models.csproj", "{9A599650-8B75-4CD4-AAAC-630E25A870F9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightFolio", "Services\FlightFolio\FlightFolio\FlightFolio.csproj", "{E6E83A97-C7E2-44EB-A015-190A8D4AB46A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlightFolio", "Services\FlightFolio\FlightFolio\FlightFolio.csproj", "{E6E83A97-C7E2-44EB-A015-190A8D4AB46A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Flight.MessageService", "Services\Flight\Flight.MessageService\Flight.MessageService.csproj", "{8623BCA6-A17D-4507-9F17-EB96013CF05C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightFolio.MessageService", "Services\FlightFolio\FlightFolio.MessageService\FlightFolio.MessageService.csproj", "{F4D99743-2981-4E27-98D7-09621FC3ECC7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -87,6 +91,14 @@ Global
 		{E6E83A97-C7E2-44EB-A015-190A8D4AB46A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E6E83A97-C7E2-44EB-A015-190A8D4AB46A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E6E83A97-C7E2-44EB-A015-190A8D4AB46A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8623BCA6-A17D-4507-9F17-EB96013CF05C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8623BCA6-A17D-4507-9F17-EB96013CF05C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8623BCA6-A17D-4507-9F17-EB96013CF05C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8623BCA6-A17D-4507-9F17-EB96013CF05C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F4D99743-2981-4E27-98D7-09621FC3ECC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F4D99743-2981-4E27-98D7-09621FC3ECC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F4D99743-2981-4E27-98D7-09621FC3ECC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F4D99743-2981-4E27-98D7-09621FC3ECC7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -106,6 +118,8 @@ Global
 		{6B8C0291-EDEF-4151-A4FE-10454EFE25FF} = {3499EE78-C9EA-4877-859F-70FF0C75784F}
 		{9A599650-8B75-4CD4-AAAC-630E25A870F9} = {3499EE78-C9EA-4877-859F-70FF0C75784F}
 		{E6E83A97-C7E2-44EB-A015-190A8D4AB46A} = {3499EE78-C9EA-4877-859F-70FF0C75784F}
+		{8623BCA6-A17D-4507-9F17-EB96013CF05C} = {F73DF00B-62B0-4C62-A490-46459942B016}
+		{F4D99743-2981-4E27-98D7-09621FC3ECC7} = {3499EE78-C9EA-4877-859F-70FF0C75784F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E9F7522F-4DCC-4481-B7B7-488CF1E7E12F}

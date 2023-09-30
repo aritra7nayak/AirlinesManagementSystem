@@ -112,5 +112,15 @@ namespace Flight.Controllers
             }
             return RedirectToAction(nameof(Index));
         }
+
+        public IActionResult Publish()
+        {
+            // Call the SendFlightDataToRabbitMQ method from your service
+            _aeroplaneService.PublishAeroplane();
+
+            // Optionally, you can redirect to another view or return a response
+            // For example, redirect to the same view:
+            return RedirectToAction("Index");
+        }
     }
 }

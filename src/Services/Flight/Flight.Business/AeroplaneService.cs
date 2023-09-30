@@ -1,4 +1,5 @@
-﻿using Flight.Models;
+﻿using Flight.MessageService;
+using Flight.Models;
 using Flight.Repository;
 using System;
 using System.Collections.Generic;
@@ -12,10 +13,12 @@ namespace Flight.Business
     public class AeroplaneService
     {
         private readonly AeroplaneRepository _aeroplaneRepository;
+        private readonly RabbitMQService _rabbitMQService;
 
-        public AeroplaneService(AeroplaneRepository aeroplaneRepository)
+        public AeroplaneService(AeroplaneRepository aeroplaneRepository, RabbitMQService rabbitMQService)
         {
-            _aeroplaneRepository = aeroplaneRepository ?? throw new ArgumentNullException(nameof(aeroplaneRepository));
+            _aeroplaneRepository = aeroplaneRepository;
+            _rabbitMQService = rabbitMQService;
         }
 
         public async Task<Aeroplane> GetByIdAsync(int id)
@@ -49,6 +52,24 @@ namespace Flight.Business
             if (aeroplaneToDelete != null)
             {
                 await _aeroplaneRepository.DeleteAsync(aeroplaneToDelete);
+            }
+
+        }
+
+        public bool PublishAeroplane()
+        {
+            var aeroplanes = _aeroplaneRepository.GetAeroplaneToPublish();
+
+            try
+            {
+                _rabbitMQService.PublishFlightData(aeroplanes);
+                return true;
+
+            }
+            catch(Exception ex)
+            {
+                Console.WriteLine(ex);
+                return false;
             }
 
         }

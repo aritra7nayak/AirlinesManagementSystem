@@ -1,13 +1,16 @@
 using Flight.Business;
 using Flight.Infrastructure;
+using Flight.MessageService;
 using Flight.Repository;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-
+var rabbitMQSection = builder.Configuration.GetSection("RabbitMQ");
+builder.Services.Configure<RabbitMQOptions>(rabbitMQSection);
 var connectionString = builder.Configuration.GetConnectionString("FlightConnectionString");
 builder.Services.AddDbContext<FlightContext>(options =>
 {
@@ -16,6 +19,8 @@ builder.Services.AddDbContext<FlightContext>(options =>
 builder.Services.AddControllers();
 builder.Services.AddScoped<AeroplaneService>();
 builder.Services.AddScoped<AeroplaneRepository>();
+builder.Services.AddScoped<RabbitMQService>();
+
 builder.Services.AddControllersWithViews();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

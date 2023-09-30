@@ -7,11 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting.Abstractions" Version="7.0.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="RabbitMq.client" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\FlightFolio.DTOs\FlightFolio.DTOs.csproj" />
     <ProjectReference Include="..\FlightFolio.Infrastructure\FlightFolio.Infrastructure.csproj" />
-    <ProjectReference Include="..\FlightFolio.MessageService\FlightFolio.MessageService.csproj" />
     <ProjectReference Include="..\FlightFolio.Models\FlightFolio.Models.csproj" />
-    <ProjectReference Include="..\FlightFolio.Repository\FlightFolio.Repository.csproj" />
   </ItemGroup>
 
 </Project>
