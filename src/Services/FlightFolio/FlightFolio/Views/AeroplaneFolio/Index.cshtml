@@ -1,0 +1,93 @@
+﻿@model PagedList.IPagedList<FlightFolio.Models.AeroplaneFolio>
+@using PagedList.Mvc;
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<p>
+    @Html.ActionLink("Filter", "Filter")
+</p>
+<p>
+</p>
+@if (Model != null)
+{
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.First().AeroplaneId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().Source)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().Destination)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().Departure)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().Arrival)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.First().TotalPassenger)
+            </th>
+
+           
+
+
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Aeroplane.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Source)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Destination)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Departure)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Arrival)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TotalPassenger)
+                </td>
+               
+
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                </td>
+            </tr>
+        }
+
+    </table>
+    <br />
+
+    @*<div id='Paging' style="text-align:center">
+        Page @(Model.PageCount < Model.PageNumber ? 0 : Model.PageNumber)
+        of @Model.PageCount
+        @{
+            var filters = (FactPanel.ViewModels.StockPriceFilterViewModel)ViewBag.Filters;
+
+            @Html.PagedListPager(Model, x => { filters.page = x; return CustomUrlHelper.GenerateUrl("StockPrices", "Index", filters); })
+            ;
+        }
+    </div>*@
+
+}

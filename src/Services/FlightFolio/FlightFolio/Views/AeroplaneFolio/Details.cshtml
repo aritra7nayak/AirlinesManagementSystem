@@ -1,0 +1,17 @@
+﻿@model FlightFolio.Models.AeroplaneFolio
+
+<h1>Aeroplane Details</h1>
+
+<div>
+    <h4>Name: @Model.Aeroplane.Name</h4>
+    <h4>Source: @Model.Source</h4>
+    <h4>Destination: @Model.Destination</h4>
+    <h4>Departure: @Model.Departure</h4>
+    <h4>Arrival: @Model.Arrival</h4> 
+    <h4>TotalPassenger: @Model.TotalPassenger</h4>
+
+</div>
+
+<p>
+    @Html.ActionLink("Back to List", "Index")
+</p>

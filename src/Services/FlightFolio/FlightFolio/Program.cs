@@ -28,6 +28,8 @@ builder.Services.AddScoped<RabbitMQConsumerHostedService>();
 builder.Services.AddControllers();
 builder.Services.AddScoped<AeroplaneService>();
 builder.Services.AddScoped<AeroplaneRepository>();
+builder.Services.AddScoped<AeroplaneFolioRepository>();
+builder.Services.AddScoped<AeroplaneFolioService>();
 //builder.Services.AddSingleton<RabbitMQReceiveMessageService>();
 builder.Services.AddControllersWithViews();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
