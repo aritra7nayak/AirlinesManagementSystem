@@ -9,7 +9,6 @@
   <ItemGroup>
     <ProjectReference Include="..\FlightFolio.DTOs\FlightFolio.DTOs.csproj" />
     <ProjectReference Include="..\FlightFolio.Infrastructure\FlightFolio.Infrastructure.csproj" />
-    <ProjectReference Include="..\FlightFolio.MessageService\FlightFolio.MessageService.csproj" />
     <ProjectReference Include="..\FlightFolio.Models\FlightFolio.Models.csproj" />
     <ProjectReference Include="..\FlightFolio.Repository\FlightFolio.Repository.csproj" />
   </ItemGroup>

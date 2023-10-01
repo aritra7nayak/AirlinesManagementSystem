@@ -11,9 +11,14 @@ namespace FlightFolio.Infrastructure
 {
     public class FlightFolioContext :DbContext
     {
+        
         public FlightFolioContext(DbContextOptions<FlightFolioContext> options) : base(options)
         {
 
+        }
+
+        public FlightFolioContext(): this(new DbContextOptions<FlightFolioContext>()) {
+            
         }
 
         public DbSet<Aeroplane> Aeroplanes { get; set; }

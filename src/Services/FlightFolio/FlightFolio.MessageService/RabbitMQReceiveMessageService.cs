@@ -8,6 +8,11 @@ using System.Threading.Tasks;
 using Microsoft.Extensions.Options;
 using FlightFolio.Models;
 using FlightFolio.DTOs;
+using FlightFolio.Business;
+using FlightFolio.Infrastructure;
+using FlightFolio.Repository;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace FlightFolio.MessageService
 {
@@ -17,11 +22,12 @@ namespace FlightFolio.MessageService
         private readonly IConnection _connection;
         private readonly IModel _channel;
         private readonly EventingBasicConsumer _consumer;
+        private readonly AeroplaneService _aeroplaneService;
 
-
-        public RabbitMQReceiveMessageService(IOptions<RabbitMQOptions> rabbitMQOptions)
+        public RabbitMQReceiveMessageService(IOptions<RabbitMQOptions> rabbitMQOptions , AeroplaneService aeroplaneService)
         {
             _rabbitMQOptions = rabbitMQOptions.Value;
+            _aeroplaneService = aeroplaneService;
 
             // Create a connection factory with options
             var factory = new ConnectionFactory
@@ -50,6 +56,7 @@ namespace FlightFolio.MessageService
 
                 // Deserialize the message to Flight object
                 var flightData = Newtonsoft.Json.JsonConvert.DeserializeObject<List<PublishedAeroplane>>(message);
+                AddMQData(flightData);
 
                 // Process the flight data (e.g., save to a database or perform other actions)
                 Console.WriteLine($"Received flight data: {message}");
@@ -69,7 +76,18 @@ namespace FlightFolio.MessageService
             // Stop message consumption gracefully if needed
         }
 
-        // Dispose method to handle cleanup
+        public void AddMQData(List<PublishedAeroplane> publishedAeroplanes)
+        {
+                foreach (PublishedAeroplane publishedAeroplane in publishedAeroplanes)
+            {
+                Aeroplane aeroplane = new Aeroplane();
+                aeroplane.Name = publishedAeroplane.Name;   
+                aeroplane.Manufacturer = publishedAeroplane.Manufacturer;
+                _aeroplaneService.AddAeroplaneAsync(aeroplane);
+            }
+        }
+
+
         public void Dispose()
         {
             _channel.Close();

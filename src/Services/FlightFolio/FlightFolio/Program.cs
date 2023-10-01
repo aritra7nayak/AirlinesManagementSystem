@@ -27,6 +27,8 @@ builder.Services.AddScoped<RabbitMQConsumerHostedService>();
 
 builder.Services.AddControllers();
 builder.Services.AddScoped<AeroplaneService>();
+builder.Services.AddScoped<UnitOfWork>();
+
 builder.Services.AddScoped<AeroplaneRepository>();
 builder.Services.AddScoped<AeroplaneFolioRepository>();
 builder.Services.AddScoped<AeroplaneFolioService>();

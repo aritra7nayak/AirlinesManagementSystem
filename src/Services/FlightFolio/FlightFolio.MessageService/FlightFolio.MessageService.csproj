@@ -13,6 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\FlightFolio.Business\FlightFolio.Business.csproj" />
     <ProjectReference Include="..\FlightFolio.DTOs\FlightFolio.DTOs.csproj" />
     <ProjectReference Include="..\FlightFolio.Infrastructure\FlightFolio.Infrastructure.csproj" />
     <ProjectReference Include="..\FlightFolio.Models\FlightFolio.Models.csproj" />
