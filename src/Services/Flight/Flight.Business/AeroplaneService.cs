@@ -1,4 +1,5 @@
-﻿using Flight.MessageService;
+﻿using Flight.DTOs;
+using Flight.MessageService;
 using Flight.Models;
 using Flight.Repository;
 using System;
@@ -30,6 +31,13 @@ namespace Flight.Business
         {
             return await _aeroplaneRepository.GetAllAsync();
         }
+
+        public async Task<IReadOnlyList<PublishAeroplane>> GetAeroplanes()
+        {
+            var result = await _aeroplaneRepository.GetAeroplanes();
+            return result;
+        }
+
 
         public async Task<IReadOnlyList<Aeroplane>> GetAeroplanesByFilterAsync(Expression<Func<Aeroplane, bool>> filter)
         {

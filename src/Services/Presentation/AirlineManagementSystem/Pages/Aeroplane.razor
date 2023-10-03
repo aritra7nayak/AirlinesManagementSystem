@@ -1,0 +1,20 @@
+﻿@page "/"
+@inherits AeroplaneBase
+<PageTitle>Arisa Pvt.Ltd</PageTitle>
+
+<h1>Welcome to Arisa Pvt. Ltd.</h1>
+
+Please find the below available flights!!
+
+
+<div class="aeroplane-list">
+    @foreach (var aeroplane in Aeroplanes)
+    {
+        <div class="aeroplane-card">
+            <div class="aeroplane-details">
+                <h4>@aeroplane.Name</h4>
+                <p>@aeroplane.Manufacturer</p>
+            </div>
+        </div>
+    }
+</div>

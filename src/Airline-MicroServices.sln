@@ -39,15 +39,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlightFolio.MessageService"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Users", "Users", "{6FFA96F7-AEAC-4D15-8FDE-09682815D20B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightIdentity", "Services\Users\FlightIdentity\FlightIdentity.csproj", "{D5CA2B52-A1D9-4805-9A78-7D328510A92C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlightIdentity", "Services\Users\FlightIdentity\FlightIdentity.csproj", "{D5CA2B52-A1D9-4805-9A78-7D328510A92C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightIdentity.Services", "Services\Users\FlightIdentity.Services\FlightIdentity.Services.csproj", "{0D1DE717-77C8-45DB-B905-E41E49245742}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlightIdentity.Services", "Services\Users\FlightIdentity.Services\FlightIdentity.Services.csproj", "{0D1DE717-77C8-45DB-B905-E41E49245742}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightIdentity.Models", "Services\Users\FlightIdentity.Models\FlightIdentity.Models.csproj", "{AF0D39C7-08E9-4701-B621-7B603178D337}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlightIdentity.Models", "Services\Users\FlightIdentity.Models\FlightIdentity.Models.csproj", "{AF0D39C7-08E9-4701-B621-7B603178D337}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightIdentity.DTOs", "Services\Users\FlightIdentity.DTOs\FlightIdentity.DTOs.csproj", "{0FB3F652-2884-4D86-B089-8CB779055332}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlightIdentity.DTOs", "Services\Users\FlightIdentity.DTOs\FlightIdentity.DTOs.csproj", "{0FB3F652-2884-4D86-B089-8CB779055332}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FlightIdentity.Infrastructure", "Services\Users\FlightIdentity.Infrastructure\FlightIdentity.Infrastructure.csproj", "{CC3B430F-9553-439D-BD37-2C8DFB174F69}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlightIdentity.Infrastructure", "Services\Users\FlightIdentity.Infrastructure\FlightIdentity.Infrastructure.csproj", "{CC3B430F-9553-439D-BD37-2C8DFB174F69}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{C7222EFE-F165-48C4-9888-A80FD5652D1B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirlineManagementSystem", "Services\Presentation\AirlineManagementSystem\AirlineManagementSystem.csproj", "{F663E3EF-ED7C-42B5-8EB1-2C1ACD5217FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -131,6 +135,10 @@ Global
 		{CC3B430F-9553-439D-BD37-2C8DFB174F69}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CC3B430F-9553-439D-BD37-2C8DFB174F69}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CC3B430F-9553-439D-BD37-2C8DFB174F69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F663E3EF-ED7C-42B5-8EB1-2C1ACD5217FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F663E3EF-ED7C-42B5-8EB1-2C1ACD5217FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F663E3EF-ED7C-42B5-8EB1-2C1ACD5217FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F663E3EF-ED7C-42B5-8EB1-2C1ACD5217FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -158,6 +166,8 @@ Global
 		{AF0D39C7-08E9-4701-B621-7B603178D337} = {6FFA96F7-AEAC-4D15-8FDE-09682815D20B}
 		{0FB3F652-2884-4D86-B089-8CB779055332} = {6FFA96F7-AEAC-4D15-8FDE-09682815D20B}
 		{CC3B430F-9553-439D-BD37-2C8DFB174F69} = {6FFA96F7-AEAC-4D15-8FDE-09682815D20B}
+		{C7222EFE-F165-48C4-9888-A80FD5652D1B} = {65F7DD18-1995-40DD-ABAD-FAF8D2C91289}
+		{F663E3EF-ED7C-42B5-8EB1-2C1ACD5217FB} = {C7222EFE-F165-48C4-9888-A80FD5652D1B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {E9F7522F-4DCC-4481-B7B7-488CF1E7E12F}
