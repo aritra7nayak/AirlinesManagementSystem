@@ -10,7 +10,7 @@ builder.Services.AddRazorPages();
 builder.Services.AddServerSideBlazor();
 builder.Services.AddHttpClient<IAeroplaneService,AeroplaneService>(client =>
 {
-    client.BaseAddress = new Uri("http://localhost:5000");
+    client.BaseAddress = new Uri("http://localhost:5000/");
     // Additional configuration if needed, such as headers or timeouts.
 });
 //builder.Services.AddSingleton<WeatherForecastService>();

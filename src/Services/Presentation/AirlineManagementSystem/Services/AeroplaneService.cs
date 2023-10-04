@@ -1,44 +1,57 @@
 ﻿using AirlineManagementSystem.DTOs;
 using System.Text.Json;
 using System.Net.Http.Json;
+using Newtonsoft.Json;
 
 namespace AirlineManagementSystem.Services
 {
     public class AeroplaneService : IAeroplaneService
     {
+        private readonly ILogger<AeroplaneService> _logger;
         public readonly HttpClient _httpClient;
 
-        public AeroplaneService(HttpClient httpClient)
+        public AeroplaneService(HttpClient httpClient, ILogger<AeroplaneService> logger)
         {
             _httpClient = httpClient;
+            _logger = logger;
         }
 
         public async Task<IEnumerable<AeroplaneDto>> GetAeroplanes()
         {
             try
             {
-
-
                 var response = await _httpClient.GetAsync("/api/aeroplanes");
 
                 if (response.IsSuccessStatusCode)
                 {
-                    // Ensure that the response content is treated as JSON
-                    var aeroplanes = await response.Content.ReadAsStringAsync();
-                    return JsonSerializer.Deserialize<IEnumerable<AeroplaneDto>>(aeroplanes);
+                    var aeroplanesJson = await response.Content.ReadAsStringAsync();
+
+                    // Use Newtonsoft.Json for deserialization
+                    var aeroplanes = JsonConvert.DeserializeObject<IEnumerable<AeroplaneDto>>(aeroplanesJson);
+
+                    return aeroplanes;
                 }
                 else
                 {
-                    // Handle the error here, such as logging or throwing an exception.
-                    // You can also return an empty list or null as per your error handling strategy.
+                    // Log the error details
+                    var errorContent = await response.Content.ReadAsStringAsync();
+                    _logger.LogError($"Failed to retrieve data: {response.StatusCode} - {errorContent}");
                     return new List<AeroplaneDto>();
                 }
             }
-            catch(Exception ex)
+            catch (HttpRequestException ex)
             {
-                throw ex;
+                // Log the HTTP request exception
+                _logger.LogError($"HTTP request failed: {ex.Message}");
+                throw;
             }
-
+            catch (Exception ex)
+            {
+                // Log other exceptions
+                _logger.LogError($"An error occurred: {ex.Message}");
+                throw;
+            }
         }
+
     }
 }

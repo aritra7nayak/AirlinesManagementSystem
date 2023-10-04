@@ -7,6 +7,44 @@
 Please find the below available flights!!
 
 
+<style>
+    .aeroplane-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .aeroplane-card {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin: 10px;
+        padding: 10px;
+        width: 200px;
+        transition: transform 0.3s ease-in-out;
+    }
+
+        .aeroplane-card:hover {
+            transform: translateY(-5px);
+        }
+
+    .aeroplane-details {
+        text-align: center;
+    }
+
+    h4 {
+        font-size: 1.2rem;
+        margin: 0;
+    }
+
+    p {
+        font-size: 1rem;
+        margin: 5px 0;
+        color: #666;
+    }
+</style>
+
 <div class="aeroplane-list">
     @foreach (var aeroplane in Aeroplanes)
     {

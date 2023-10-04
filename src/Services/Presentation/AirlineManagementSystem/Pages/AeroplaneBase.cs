@@ -9,7 +9,7 @@ namespace AirlineManagementSystem.Pages
         [Inject]
         public IAeroplaneService AeroplaneService { get; set; }
 
-        public IEnumerable<AeroplaneDto> Aeroplanes { get; set; }
+        protected List<AeroplaneDto> Aeroplanes { get; set; } = new List<AeroplaneDto>();
 
         protected override async Task OnInitializedAsync()
         {
