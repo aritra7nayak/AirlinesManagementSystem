@@ -1,0 +1,21 @@
+﻿@inject Microsoft.AspNetCore.Components.NavigationManager NavigationManager
+
+@page "/login"
+
+@inherits UserLoginBase
+
+<PageTitle>Login to Arisa Pvt. Ltd.</PageTitle>
+
+<h1>Login to Arisa Pvt. Ltd.</h1>
+
+<div class="form-group">
+    <label for="Email">Email</label>
+    <input type="email" id="Email" @bind="loginModel.Email" class="form-control" />
+</div>
+
+<div class="form-group">
+    <label for="Password">Password</label>
+    <input type="password" id="Password" @bind="loginModel.Password" class="form-control" />
+</div>
+
+<button @onclick="Login" class="btn btn-primary">Login</button>

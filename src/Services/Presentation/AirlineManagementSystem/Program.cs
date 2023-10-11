@@ -13,6 +13,11 @@ builder.Services.AddHttpClient<IAeroplaneService,AeroplaneService>(client =>
     client.BaseAddress = new Uri("http://localhost:5000/");
     // Additional configuration if needed, such as headers or timeouts.
 });
+
+builder.Services.AddHttpClient<UserRegistrationLogin>(client =>
+{
+    client.BaseAddress = new Uri("http://localhost:5295/");
+});
 //builder.Services.AddSingleton<WeatherForecastService>();
 
 var app = builder.Build();

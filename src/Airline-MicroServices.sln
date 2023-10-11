@@ -51,7 +51,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FlightIdentity.Infrastructu
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{C7222EFE-F165-48C4-9888-A80FD5652D1B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AirlineManagementSystem", "Services\Presentation\AirlineManagementSystem\AirlineManagementSystem.csproj", "{F663E3EF-ED7C-42B5-8EB1-2C1ACD5217FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AirlineManagementSystem", "Services\Presentation\AirlineManagementSystem\AirlineManagementSystem.csproj", "{F663E3EF-ED7C-42B5-8EB1-2C1ACD5217FB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
