@@ -1,9 +1,11 @@
 ﻿using AirlineManagementSystem.DTOs;
 using AirlineManagementSystem.Services;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Components;
 
 namespace AirlineManagementSystem.Pages
 {
+    [Authorize]
     public class AeroplaneBase : ComponentBase
     {
         [Inject]
@@ -13,6 +15,7 @@ namespace AirlineManagementSystem.Pages
 
         protected override async Task OnInitializedAsync()
         {
+
             Aeroplanes = (await AeroplaneService.GetAeroplanes()).ToList();
         }
 

@@ -23,7 +23,7 @@ namespace AirlineManagementSystem.Pages
             if (response.IsSuccessStatusCode)
             {
                 // Handle success, e.g., navigate to a success page
-                NavigationManager.NavigateTo("/", forceLoad: false);
+                NavigationManager.NavigateTo("/Aeroplane", forceLoad: false);
             }
             else
             {
